@@ -7,6 +7,8 @@ import os
 import init
 
 #bg8
+import users.b.g8.bg8_40323213
+import users.b.g8.bg8_40323213_1
 import users.b.g8.bg8_40323237
 import users.b.g8.bg8_40323229
 import users.b.g8.bg8_40323242
@@ -384,6 +386,8 @@ if __name__ == "__main__":
     app.run()
 
 #bg8
+app.register_blueprint(users.b.g8.bg8_40323213.bg8_40323213)
+app.register_blueprint(users.b.g8.bg8_40323213_1.bg8_40323213_1)
 app.register_blueprint(users.b.g8.bg8_40323237.bg8_40323237)
 app.register_blueprint(users.b.g8.bg8_40323229.bg8_40323229)
 app.register_blueprint(users.b.g8.bg8_40323242.bg8_40323242)
