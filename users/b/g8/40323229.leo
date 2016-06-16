@@ -10,17 +10,17 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160501215436.2"><vh>pelican 部份</vh>
-<v t="amd.20160501215558.1"><vh>@path ./../../../</vh>
+<v t="amd.20160501215436.2" a="E"><vh>pelican 部份</vh>
+<v t="amd.20160501215558.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501223113.1"><vh>@edit README.md</vh></v>
-<v t="amd.20160501215634.1"><vh>@path static</vh>
+<v t="amd.20160501215634.1" a="E"><vh>@path static</vh>
 <v t="amd.20160501220009.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160501220009.2"><vh>@button gh-pages pelican</vh></v>
 </v>
 <v t="amd.20160501220029.1"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
-<v t="amd.20160501215942.1"><vh>@path content/b/g8</vh>
+<v t="amd.20160501215942.1" a="E"><vh>@path content/b/g8</vh>
 <v t="amd.20160501215720.1"><vh>@edit 40323229-20160505.md</vh></v>
 </v>
 </v>
@@ -1233,8 +1233,8 @@ mychain.basic(x10, y10, 0+65*3, 0)
 &lt;/body&gt;&lt;/html&gt;
 '''
     return outstring</t>
-<t tx="leo.20160616095151.1">@bg8_40323229.route('/threemesh', defaults={'n1':15,'n2':20,'n3':18})
-@bg8_40323229.route('/threemesh/&lt;n1&gt;/&lt;n2&gt;/&lt;n3&gt;')
+<t tx="leo.20160616095151.1">@bg8_40323229.route('/threemesh', defaults={'n1':15,'n2':20,'n3':18,'n4':10})
+@bg8_40323229.route('/threemesh/&lt;n1&gt;/&lt;n2&gt;/&lt;n3&gt;/&lt;n4&gt;')
 def threemesh(n1, n2, n3,n4):
     # 真正最後的架構應該要在函式中準備繪圖所需的資料, 然後用 template 呈現內容
     title = "網際 2D 繪圖"
@@ -1391,7 +1391,8 @@ spur(cx+pr1+pr2, cy, m, n2, pa, 180-180/n2)
 # 如此, 第3齒只要逆時鐘旋轉 180 度後, 再逆時鐘或順時鐘轉動半齒的角度, 即可與第2齒囓合
 # 但是第2齒為了與第一齒囓合時, 已經從原始定位線轉了 180-180/n2 度
 # 而當第2齒從與第3齒囓合的定位線, 逆時鐘旋轉 180-180/n2 角度後, 原先囓合的第3齒必須要再配合旋轉 (180-180/n2 )*n2/n3
-spur(cx+pr1+pr2+pr2+pr3+pr4, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+spur(cx+pr1+pr2+pr2+pr3, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4+(180-180/n3)*n3/n4+180-180/n4)
 &lt;/script&gt;
 '''
     bodystring = "&lt;body&gt;" + body+"&lt;/body&gt;"

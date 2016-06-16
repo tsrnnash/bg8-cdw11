@@ -572,8 +572,8 @@ r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
         outstring += "r"+str(i)+", s"+str(i)+"=mychain.basic_rot(r"+str(i-1)+", s"+str(i-1)+", "+str(first_degree)+")\n"
  
     return outstring
-@bg8_40323229.route('/threemesh', defaults={'n1':15,'n2':20,'n3':18})
-@bg8_40323229.route('/threemesh/<n1>/<n2>/<n3>')
+@bg8_40323229.route('/threemesh', defaults={'n1':15,'n2':20,'n3':18,'n4':10})
+@bg8_40323229.route('/threemesh/<n1>/<n2>/<n3>/<n4>')
 def threemesh(n1, n2, n3,n4):
     # 真正最後的架構應該要在函式中準備繪圖所需的資料, 然後用 template 呈現內容
     title = "網際 2D 繪圖"
@@ -730,7 +730,8 @@ spur(cx+pr1+pr2, cy, m, n2, pa, 180-180/n2)
 # 如此, 第3齒只要逆時鐘旋轉 180 度後, 再逆時鐘或順時鐘轉動半齒的角度, 即可與第2齒囓合
 # 但是第2齒為了與第一齒囓合時, 已經從原始定位線轉了 180-180/n2 度
 # 而當第2齒從與第3齒囓合的定位線, 逆時鐘旋轉 180-180/n2 角度後, 原先囓合的第3齒必須要再配合旋轉 (180-180/n2 )*n2/n3
-spur(cx+pr1+pr2+pr2+pr3+pr4, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+spur(cx+pr1+pr2+pr2+pr3, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4+(180-180/n3)*n3/n4+180-180/n4)
 </script>
 '''
     bodystring = "<body>" + body+"</body>"
