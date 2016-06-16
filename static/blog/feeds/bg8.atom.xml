@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg8.atom.xml" rel="self"></link><id>./</id><updated>2016-06-16T22:58:32+08:00</updated><entry><title>40323213 cdw11 報告</title><link href="./40323213-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T22:58:32+08:00</updated><author><name>40323213</name></author><id>tag:,2016-06-16:./40323213-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;cdw11內容:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg8.atom.xml" rel="self"></link><id>./</id><updated>2016-06-16T23:48:56+08:00</updated><entry><title>40323213 期末報告</title><link href="./40323213-qi-mo-bao-gao.html" rel="alternate"></link><updated>2016-06-16T23:48:56+08:00</updated><author><name>40323213</name></author><id>tag:,2016-06-16:./40323213-qi-mo-bao-gao.html</id><summary type="html">&lt;p&gt;cdw11內容:&lt;/p&gt;
+&lt;p&gt;其中後的一個禮拜,利用老師給的新版本,利用參數將圓形的鏈條數量。&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/AZxAkMG.png" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;cdw13內容:&lt;/p&gt;
 &lt;p&gt;複製在kmolab上的程式碼，畫出垂直鏈條。&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://bg8-cdw11.rhcloud.com/images/1.png" width="100%" /&gt;&lt;/p&gt;
-&lt;p&gt;自評:70分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw11"></category></entry><entry><title>40323237 cdw11 報告</title><link href="./40323237-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T22:27:06+08:00</updated><author><name>40323237</name></author><id>tag:,2016-06-16:./40323237-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/HOYrIpY.png?1" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;cdw14內容:&lt;/p&gt;
+&lt;p&gt;複製老師程式碼，嘗試製作第四個齒輪，而且需要跟第三個齒輪嚙合，再用OnShape來模擬。&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/DsEBvar.png?1" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;心得:經過期中之後，換了cdw11感覺又變難了，而且這次又是要用程式畫圖，onshape的圖，這次比較簡單了，但是要注意齒輪鎳合旋轉時的設定，
+旋轉角在製作齒輪時可以不用設，全部是0就可以了，這設定令我卡了很久，程式畫圖方面，參考了同學的程式自己又做了一次，而且在同學的幫忙下，終於完成。&lt;/p&gt;
+&lt;p&gt;自評:70分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw18"></category></entry><entry><title>40323213 cdw14 報告</title><link href="./40323213-cdw14-bao-gao.html" rel="alternate"></link><updated>2016-06-16T23:37:32+08:00</updated><author><name>40323213</name></author><id>tag:,2016-06-16:./40323213-cdw14-bao-gao.html</id><summary type="html">&lt;p&gt;cdw14內容:&lt;/p&gt;
+&lt;p&gt;複製老師程式碼，嘗試製作第四個齒輪，而且需要跟第三個齒輪嚙合，再用OnShape來模擬。&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/DsEBvar.png?1" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;心得:要算齒輪的數據很麻煩，onshape在做的時候其實可以不用設定旋轉角(在組合時設定就好)，這地方讓我做了很久，齒輪會一直卡住。&lt;/p&gt;
+&lt;p&gt;自評:70分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw14"></category></entry><entry><title>40323213 cdw13 報告</title><link href="./40323213-cdw13-bao-gao.html" rel="alternate"></link><updated>2016-06-16T23:33:30+08:00</updated><author><name>40323213</name></author><id>tag:,2016-06-16:./40323213-cdw13-bao-gao.html</id><summary type="html">&lt;p&gt;cdw13內容:&lt;/p&gt;
+&lt;p&gt;複製在kmolab上的程式碼，畫出垂直鏈條。&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/HOYrIpY.png?1" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;心得:這次的進度跟w11有點相似所以做起來比較輕鬆，而且可以複製老師的程式，覺得好玩。&lt;/p&gt;
+&lt;p&gt;自評:70分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw13"></category></entry><entry><title>40323213 cdw11 報告</title><link href="./40323213-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T22:58:32+08:00</updated><author><name>40323213</name></author><id>tag:,2016-06-16:./40323213-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;cdw11內容:&lt;/p&gt;
+&lt;p&gt;其中後的一個禮拜,利用老師給的新版本,利用參數定義圓形的鏈條數量。&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/AZxAkMG.png" width="100%" /&gt;&lt;/p&gt;
+&lt;p&gt;心得:經過期中之後，換了cdw11感覺又變難了，而且這次又是要用程式畫圖，更令人傷腦筋了，在同學的幫忙下，終於完成。&lt;/p&gt;
+&lt;p&gt;自評:60分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw11"></category></entry><entry><title>40323237 cdw11 報告</title><link href="./40323237-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-16T22:27:06+08:00</updated><author><name>40323237</name></author><id>tag:,2016-06-16:./40323237-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
 
 
 &lt;p&gt;pelican 網誌位置: &lt;a href="http://cdw11-ag100.rhcloud.com/static/"&gt;http://cdw11-ag100.rhcloud.com/static/&lt;/a&gt;&lt;/p&gt;
