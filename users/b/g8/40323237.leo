@@ -21,13 +21,16 @@
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g8</vh>
-<v t="amd.20160501215720.1"><vh>@edit 40323237-cdw11.md</vh></v>
+<v t="leo.20160618213823.1"><vh>@edit 40323237-cdw11.md</vh></v>
+<v t="amd.20160501215720.1"><vh>@edit 40323237-cdw13.md</vh></v>
+<v t="leo.20160618215513.1"><vh>@edit 40323237-cdw14.md</vh></v>
+<v t="leo.20160618220001.1"><vh>@edit 40323237-cdw18.md</vh></v>
 </v>
 </v>
 </v>
 </v>
 <v t="amd.20160501215545.1" a="E"><vh>wsgi 程式部份</vh>
-<v t="leo.20160526114228.1"><vh>@clean bg8_40323237.py</vh>
+<v t="leo.20160526114228.1" a="E"><vh>@clean bg8_40323237.py</vh>
 <v t="leo.20160526115549.1"><vh>bg8_40323237 declarations</vh></v>
 <v t="leo.20160526115549.3"><vh>a4</vh></v>
 <v t="leo.20160526115702.1"><vh>ABCD</vh></v>
