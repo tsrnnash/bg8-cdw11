@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="http://cdw11-ag100.rhcloud.com/static/blog/" rel="alternate"></link><link href="http://cdw11-ag100.rhcloud.com/static/blog/feeds/bg8.atom.xml" rel="self"></link><id>http://cdw11-ag100.rhcloud.com/static/blog/</id><updated>2016-06-18T20:55:05+08:00</updated><entry><title>40323226 cdw11 報告</title><link href="http://cdw11-ag100.rhcloud.com/static/blog/40323226-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-18T20:55:05+08:00</updated><author><name>40323226</name></author><id>tag:cdw11-ag100.rhcloud.com,2016-06-18:static/blog/40323226-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;cdw11內容:&lt;/p&gt;
 &lt;p&gt;利用老師給的開放鍊條之程式碼,做出兩個圓形鍊條。左12齒，右24齒。並定義X、Y距離。&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/8pjkEKn.png" width="100%" /&gt;&lt;/p&gt;
@@ -6,6 +7,9 @@
 &lt;p&gt;複製老師程式碼，嘗試製作第四個齒輪，而且需要跟第三個齒輪嚙合，並用OnShape來模擬。&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/aiLY2Qr.png" width="100%" /&gt;&lt;/p&gt;
 &lt;p&gt;心得:onshape在算數據的時候真的很麻煩，每次修正齒輪都會不吻合，這裡真的卡很久，後來旋轉角設定正確後，才完成。這學期教了很多協同的知識，很多事情或者是以後工作上，都需要夥伴間相互合作才有辦法完成，若少了一個人，對於團隊都是個龐大的壓力，勢必會有人承擔比較多，這樣絕對不是一件好事，所以作為一個協同者，一定要將自己的本分做完，並且做到最好。&lt;/p&gt;</summary><category term="40323226"></category><category term="cdw14"></category></entry><entry><title>40323229 cdw11 報告</title><link href="http://cdw11-ag100.rhcloud.com/static/blog/40323229-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-18T19:48:47+08:00</updated><author><name>40323229</name></author><id>tag:cdw11-ag100.rhcloud.com,2016-06-18:static/blog/40323229-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW11 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg8.atom.xml" rel="self"></link><id>./</id><updated>2016-05-12T08:50:17+08:00</updated><entry><title>40323229 cdw11 報告</title><link href="./40323229-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-05-12T08:50:17+08:00</updated><author><name>40323229</name></author><id>tag:,2016-05-12:./40323229-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
+>>>>>>> 8112cdf051615416fadf98a5c5f54f0725a10fd6
 
 
 &lt;p&gt;pelican 網誌位置: &lt;a href="http://cdw11-ag100.rhcloud.com/static/"&gt;http://cdw11-ag100.rhcloud.com/static/&lt;/a&gt;&lt;/p&gt;
@@ -15,6 +19,7 @@
 &lt;p&gt;請各組在 CDW11 下課前完成下列3個圖形的零件組合繪圖:&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://cdw11-ag100.rhcloud.com/images/cdw11_4a.png" width="100%" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://cdw11-ag100.rhcloud.com/images/cdw11_badc.png" width="100%" /&gt;&lt;/p&gt;
+<<<<<<< HEAD
 &lt;p&gt;&lt;img src="http://cdw11-ag100.rhcloud.com/images/cdw11_abcd.png" width="100%" /&gt;&lt;/p&gt;</summary><category term="40323229"></category><category term="cdw11"></category></entry><entry><title>40323237 cdw11 報告</title><link href="http://cdw11-ag100.rhcloud.com/static/blog/40323237-cdw11-bao-gao.html" rel="alternate"></link><updated>2016-06-18T19:48:47+08:00</updated><author><name>40323237</name></author><id>tag:cdw11-ag100.rhcloud.com,2016-06-18:static/blog/40323237-cdw11-bao-gao.html</id><summary type="html">&lt;p&gt;啟動 cdw11 協同專案&lt;/p&gt;
 
 
@@ -73,3 +78,6 @@ openshift:http://cdw11-40323200.rhcloud.com/bg8_40323213/ABCD&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://i.imgur.com/PjnvbjC.png" /&gt;&lt;/p&gt;
 &lt;p&gt;心得:字母的排列讓我花了不少時間，加上自己近端試很多次造成還當機，不過後來還是完成了，程式需要很多的時間去理解。&lt;/p&gt;
 &lt;p&gt;自評:70分&lt;/p&gt;</summary><category term="40323213"></category><category term="cdw11"></category></entry></feed>
+=======
+&lt;p&gt;&lt;img src="http://cdw11-ag100.rhcloud.com/images/cdw11_abcd.png" width="100%" /&gt;&lt;/p&gt;</summary><category term="40323229"></category><category term="cdw11"></category></entry></feed>
+>>>>>>> 8112cdf051615416fadf98a5c5f54f0725a10fd6
