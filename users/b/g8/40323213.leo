@@ -33,7 +33,8 @@
 <v t="leo.20160526114228.1" a="E"><vh>@clean bg8_40323213.py</vh>
 <v t="leo.20160526115549.1"><vh>bg8_40323213 declarations</vh></v>
 <v t="leo.20160526115549.3"><vh>a4</vh></v>
-<v t="leo.20160526115702.1"><vh>ABCD</vh></v>
+<v t="leo.20160526115702.1"><vh>DBAC</vh></v>
+<v t="leo.20160618195347.1"><vh>ABCD</vh></v>
 <v t="leo.20160602113013.1"><vh>oo</vh></v>
 <v t="leo.20160602115334.1"><vh>oo2</vh></v>
 </v>
@@ -744,19 +745,40 @@ mychain.basic(x10, y10, x1, y1)
 '''
  
     return outstring</t>
-<t tx="leo.20160526115702.1">@bg8_40323213.route('/ABCD')
-def ABCD():
-    return head_str + chain_str + ABCD(0, 0) + tail_str 
+<t tx="leo.20160526115702.1">@bg8_40323213.route('/DBAC')
+def DBAC():
+    return head_str + chain_str + DBAC(0, 0) + tail_str 
 
 # 傳繪 A 函式內容
-def ABCD(x, y, scale=1, color="gray"):
+def DBAC(x, y, scale=1, color="red"):
     outstring = '''
 # 利用 chain class 建立案例, 對應到 mychain 變數
 mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
  
-# 畫 B
+# 畫 D
 # 左邊四個垂直單元
 x1, y1 = mychain.basic_rot(0, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
+# 水平接回原點
+mychain.basic(x10, y10, 0, 0)
+
+cgo.setWorldCoords(-315, -250, 500, 500)
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(5, 0, 90)
 x2, y2 = mychain.basic_rot(x1, y1, 90)
 x3, y3 = mychain.basic_rot(x2, y2, 90)
 x4, y4 = mychain.basic_rot(x3, y3, 90)
@@ -779,11 +801,10 @@ x12, y12 = mychain.basic_rot(x11, y11, 210)
 # 水平接回起點
 mychain.basic(x12,y12, 0, 0)
 
-
 cgo.setWorldCoords(-247.5, -350, 500, 500) 
 # 畫 A
 # 左邊兩個垂直單元
-x1, y1 = mychain.basic_rot(0, 0, 90)
+x1, y1 = mychain.basic_rot(135,-100, 90)
 x2, y2 = mychain.basic_rot(x1, y1, 90)
 # 左斜邊兩個單元
 x3, y3 = mychain.basic_rot(x2, y2, 80)
@@ -800,49 +821,22 @@ x9, y9 = mychain.basic_rot(x8, y8, -90)
 x10, y10 = mychain.basic_rot(x8, y8, -180)
 mychain.basic(x10, y10, x1, y1)
 
-cgo.setWorldCoords(-55, -50, 500, 500) 
-# 畫 D
-# 左邊四個垂直單元
-x1, y1 = mychain.basic_rot(0+65*3, 0, 90)
-x2, y2 = mychain.basic_rot(x1, y1, 90)
-x3, y3 = mychain.basic_rot(x2, y2, 90)
-x4, y4 = mychain.basic_rot(x3, y3, 90)
-# 上方一個水平單元
-x5, y5 = mychain.basic_rot(x4, y4, 0)
-# 右斜 -40 度
-x6, y6 = mychain.basic_rot(x5, y5, -40)
-x7, y7 = mychain.basic_rot(x6, y6, -60)
-# 右中垂直向下單元
-x8, y8 = mychain.basic_rot(x7, y7, -90)
-# -120 度
-x9, y9 = mychain.basic_rot(x8, y8, -120)
-# -140
-x10, y10 = mychain.basic_rot(x9, y9, -140)
-# 水平接回原點
-mychain.basic(x10, y10, 0+65*3, 0)
+cgo.setWorldCoords(-445, -250, 500, 500) 
 
-cgo.setWorldCoords(-120, -150, 500, 500) 
 # 畫 C
-# 上半部
-# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
-x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90)
-# 上方轉 80 度
-x2, y2 = mychain.basic_rot(x1, y1, 80)
-# 上方轉 30 度
-x3, y3 = mychain.basic_rot(x2, y2, 30)
-# 上方水平
-x4, y4 = mychain.basic_rot(x3, y3, 0)
-# 下半部, 從起點開始 -80 度
-x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80)
-# 下斜 -30 度
-x6, y6 = mychain.basic_rot(x5, y5, -30)
-# 下方水平單元
-x7, y7 = mychain.basic_rot(x6, y6, -0)
-&lt;/script&gt;
-&lt;/body&gt;&lt;/html&gt;
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(45, 0, 180)
+x2, y2 = mychain.basic_rot(x1, y1, 150)
+x3, y3 = mychain.basic_rot(x2, y2, 120)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+x5, y5 = mychain.basic_rot(x4, y4, 60)
+x6, y6 = mychain.basic_rot(x5, y5, 30)
+x7, y7 = mychain.basic_rot(x6, y6, 0)
+
+cgo.setWorldCoords(-500, -500, 500, 500)
 '''
-    return outstring
-</t>
+ 
+    return outstring</t>
 <t tx="leo.20160602113013.1">@bg8_40323213.route('/oo/&lt;x&gt;/&lt;y&gt;')
 @bg8_40323213.route('/oo', defaults={'x':0, 'y':0})
 def twocircle(x,y):
@@ -1298,6 +1292,107 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 
+</t>
+<t tx="leo.20160618195347.1">@bg8_40323213.route('/ABCD')
+def ABCD():
+    return head_str + chain_str + ABCD(0, 0) + tail_str 
+
+# 傳繪 A 函式內容
+def ABCD(x, y, scale=1, color="gray"):
+    outstring = '''
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
+ 
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 右上垂直向下單元
+x7, y7 = mychain.basic_rot(x6, y6, -90)
+# 右斜 240 度
+x8, y8 = mychain.basic_rot(x7, y7, 210)
+# 中間水平
+mychain.basic(x8, y8, x2, y2)
+# 右下斜 -30 度
+x10, y10 = mychain.basic_rot(x8, y8, -30)
+# 右下垂直向下單元
+x11, y11 = mychain.basic_rot(x10, y10, -90)
+# 右下斜 240 度
+x12, y12 = mychain.basic_rot(x11, y11, 210)
+# 水平接回起點
+mychain.basic(x12,y12, 0, 0)
+
+
+cgo.setWorldCoords(-247.5, -350, 500, 500) 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot(0, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1)
+
+cgo.setWorldCoords(-55, -50, 500, 500) 
+# 畫 D
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+65*3, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
+# 水平接回原點
+mychain.basic(x10, y10, 0+65*3, 0)
+
+cgo.setWorldCoords(-120, -150, 500, 500) 
+
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90)
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80)
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30)
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0)
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80)
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0)
+
+&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;
+'''
+    return outstring
 </t>
 </tnodes>
 </leo_file>
