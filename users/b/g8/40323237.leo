@@ -21,10 +21,10 @@
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g8</vh>
-<v t="leo.20160618213823.1"><vh>@edit 40323237-cdw11.md</vh></v>
-<v t="amd.20160501215720.1"><vh>@edit 40323237-cdw13.md</vh></v>
-<v t="leo.20160618215513.1"><vh>@edit 40323237-cdw14.md</vh></v>
-<v t="leo.20160618220001.1"><vh>@edit 40323237-cdw18.md</vh></v>
+<v t="leo.20160618213823.1"><vh>@edit 40323237_cdw11.md</vh></v>
+<v t="amd.20160501215720.1"><vh>@edit 40323237_cdw13.md</vh></v>
+<v t="leo.20160618215513.1"><vh>@edit 40323237_cdw14.md</vh></v>
+<v t="leo.20160618220001.1"><vh>@edit 40323237_cdw18.md</vh></v>
 </v>
 </v>
 </v>
@@ -95,9 +95,14 @@ if __name__ == "__main__":
     app.run()
 
 #bg8
+app.register_blueprint(users.b.g8.bg8_40323213.bg8_40323213)
+app.register_blueprint(users.b.g8.bg8_40323213_1.bg8_40323213_1)
 app.register_blueprint(users.b.g8.bg8_40323237.bg8_40323237)
+app.register_blueprint(users.b.g8.bg8_40323229.bg8_40323229)
+app.register_blueprint(users.b.g8.bg8_40323242.bg8_40323242)
+app.register_blueprint(users.b.g8.bg8_40323226.bg8_40323226)
 
-app.register_blueprint(users.b.g8.bg8_40323237_1.bg8_40323237_1)
+
 </t>
 <t tx="amd.20160501221001.10">@app.route('/fileaxupload', methods=['POST'])
 # ajax jquery chunked file upload for flask
@@ -233,8 +238,12 @@ import os
 import init
 
 #bg8
+import users.b.g8.bg8_40323213
+import users.b.g8.bg8_40323213_1
 import users.b.g8.bg8_40323237
-import users.b.g8.bg8_40323237_1
+import users.b.g8.bg8_40323229
+import users.b.g8.bg8_40323242
+import users.b.g8.bg8_40323226
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
