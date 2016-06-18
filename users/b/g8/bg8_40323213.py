@@ -140,7 +140,7 @@ def a4():
     return head_str + chain_str + a4(0, 0) + tail_str 
 
 # 傳繪 A 函式內容
-def a4(x, y, scale=1, color="gray"):
+def a4(x, y, scale=1, color="blue"):
     outstring = '''
 # 利用 chain class 建立案例, 對應到 mychain 變數
 mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
@@ -324,7 +324,7 @@ def ABCD():
     return head_str + chain_str + ABCD(0, 0) + tail_str 
 
 # 傳繪 A 函式內容
-def ABCD(x, y, scale=1, color="gray"):
+def ABCD(x, y, scale=1, color="purple"):
     outstring = '''
 # 利用 chain class 建立案例, 對應到 mychain 變數
 mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
