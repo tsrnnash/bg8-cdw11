@@ -62,6 +62,12 @@
 <v t="leo.20160616225815.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
+<v t="leo.20160619151129.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160619151129.2"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="leo.20160619151129.3"><vh>old:myflaskapp declarations</vh></v>
+<v t="leo.20160619151129.4"><vh>new:myflaskapp declarations</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="amd.20160501215436.2"></t>
@@ -96,6 +102,7 @@ if __name__ == "__main__":
 app.register_blueprint(users.b.g8.bg8_40323213.bg8_40323213)
 app.register_blueprint(users.b.g8.bg8_40323213_1.bg8_40323213_1)
 app.register_blueprint(users.b.g8.bg8_40323237.bg8_40323237)
+app.register_blueprint(users.b.g8.bg8_40323237_1.bg8_40323237_1)
 app.register_blueprint(users.b.g8.bg8_40323229.bg8_40323229)
 app.register_blueprint(users.b.g8.bg8_40323242.bg8_40323242)
 app.register_blueprint(users.b.g8.bg8_40323226.bg8_40323226)
@@ -239,6 +246,7 @@ import init
 import users.b.g8.bg8_40323213
 import users.b.g8.bg8_40323213_1
 import users.b.g8.bg8_40323237
+import users.b.g8.bg8_40323237_1
 import users.b.g8.bg8_40323229
 import users.b.g8.bg8_40323242
 import users.b.g8.bg8_40323226
@@ -945,5 +953,160 @@ r1, s1 = mychain.basic_rot(x11, y11, '''+str(first_degree)+''')
  
     return outstring
  </t>
+<t tx="leo.20160619151129.1"></t>
+<t tx="leo.20160619151129.2">(uncached) amd.20160501221001.2
+Diff...
+  # coding: utf-8
+  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+  import random
+  import math
+  import os
+  # init.py 為自行建立的起始物件
+  import init
+  
+  #bg8
+  import users.b.g8.bg8_40323213
+  import users.b.g8.bg8_40323213_1
+  import users.b.g8.bg8_40323237
+- import users.b.g8.bg8_40323237_1
+  import users.b.g8.bg8_40323229
+  import users.b.g8.bg8_40323242
+  import users.b.g8.bg8_40323226
+  
+  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+  # 設定在雲端與近端的資料儲存目錄
+  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+      # 表示程式在雲端執行
+      data_dir = os.environ['OPENSHIFT_DATA_DIR']
+      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+  else:
+      # 表示程式在近端執行
+      data_dir = _curdir + "/local_data/"
+      static_dir = _curdir + "/static"
+      download_dir = _curdir + "/local_data/downloads/"
+  
+  # 利用 init.py 啟動, 建立所需的相關檔案
+  initobj = init.Init()
+  
+  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+  app = Flask(__name__)
+  #app.config['download_dir'] = download_dir
+  
+  # 使用 session 必須要設定 secret_key
+  # In order to use sessions you have to set a secret key
+  # set the secret key.  keep this really secret:
+  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+  
+  
+  
+  
+  
+  
+  
+  
+</t>
+<t tx="leo.20160619151129.3"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+#bg8
+import users.b.g8.bg8_40323213
+import users.b.g8.bg8_40323213_1
+import users.b.g8.bg8_40323237
+import users.b.g8.bg8_40323229
+import users.b.g8.bg8_40323242
+import users.b.g8.bg8_40323226
+
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+
+
+</t>
+<t tx="leo.20160619151129.4"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+#bg8
+import users.b.g8.bg8_40323213
+import users.b.g8.bg8_40323213_1
+import users.b.g8.bg8_40323237
+import users.b.g8.bg8_40323237_1
+import users.b.g8.bg8_40323229
+import users.b.g8.bg8_40323242
+import users.b.g8.bg8_40323226
+
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+
+
+</t>
 </tnodes>
 </leo_file>
