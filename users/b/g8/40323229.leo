@@ -21,9 +21,9 @@
 <v t="amd.20160501220029.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g8</vh>
-<v t="leo.20160626215915.1"><vh>@edit 40323229-cdw11.md</vh></v>
-<v t="leo.20160626215918.1"><vh>@edit 40323229-cdw13.md</vh></v>
-<v t="leo.20160626215921.1"><vh>@edit 40323229-期末.md</vh></v>
+<v t="leo.20160626215915.1"><vh>@edit 40323229_cdw11.md</vh></v>
+<v t="leo.20160626215918.1"><vh>@edit 40323229_cdw13.md</vh></v>
+<v t="leo.20160626215921.1"><vh>@edit 40323229_期末.md</vh></v>
 </v>
 </v>
 </v>
