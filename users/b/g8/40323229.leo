@@ -648,7 +648,7 @@ class chain():
 </t>
 <t tx="leo.20160616094055.3">@bg8_40323229.route('/AAAA')
 def AAAA():
-    return head_str + chain_str + AAAA(0, 0) + tail_str 
+    return head_str + chain_str + AAAA(0, 0) + tail_str
 
 
 # 傳繪 A 函式內容
@@ -741,7 +741,7 @@ mychain.basic(x10, y10, x1, y1)
     return outstring</t>
 <t tx="leo.20160616094209.1">@bg8_40323229.route('/ABCD')
 def ABCD():
-    return head_str + chain_str + ABCD(0, 0) + tail_str 
+    return head_str + chain_str + ABCD(0, 0) + tail_str
 
 # 傳繪 A 函式內容
 def ABCD(x, y, scale=1, color="yellow"):
@@ -840,7 +840,7 @@ x7, y7 = mychain.basic_rot(x6, y6, -0)
 </t>
 <t tx="leo.20160616095147.1">@bg8_40323229.route('/BADC')
 def BADC():
-    return head_str + chain_str + BADC(0, 0) + tail_str 
+    return head_str + chain_str + BADC(0, 0) + tail_str
 
 # 傳繪 A 函式內容
 def BADC(x, y, scale=1, color="yellow"):
