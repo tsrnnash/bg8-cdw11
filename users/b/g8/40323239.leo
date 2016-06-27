@@ -23,7 +23,6 @@
 <v t="amd.20160501215942.1" a="E"><vh>@path content/b/g8</vh>
 <v t="leo.20160618213823.1"><vh>@edit 40323239_cdw11.md</vh></v>
 <v t="amd.20160501215720.1"><vh>@edit 40323239_cdw13.md</vh></v>
-<v t="leo.20160618215513.1"><vh>@edit 40323239_cdw14.md</vh></v>
 <v t="leo.20160618220001.1"><vh>@edit 40323239_cdw18.md</vh></v>
 </v>
 </v>
