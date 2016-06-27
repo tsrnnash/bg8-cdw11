@@ -140,7 +140,7 @@ def aaaa():
     return head_str + chain_str + aaaa(0, 0) + tail_str 
 
 # 傳繪 A 函式內容
-def a4(x, y, scale=1, color="black"):
+def aaaa(x, y, scale=1, color="black"):
     outstring = '''
 # 利用 chain class 建立案例, 對應到 mychain 變數
 mychain = chain(scale='''+str(scale)+''', fillcolor="'''+str(color)+'''")
