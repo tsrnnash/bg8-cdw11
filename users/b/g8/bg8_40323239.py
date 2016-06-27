@@ -1,6 +1,6 @@
 from flask import Blueprint, request
  
-bg8_40323237 = Blueprint('bg8_40323239', __name__, url_prefix='/bg8_40323239', template_folder='templates')
+bg8_40323239 = Blueprint('bg8_40323239', __name__, url_prefix='/bg8_40323239', template_folder='templates')
  
 head_str = '''
 <!DOCTYPE html>
@@ -136,7 +136,7 @@ class chain():
 '''
 
 @bg8_40323239.route('/aaaa')
-def a4():
+def aaaa():
     return head_str + chain_str + aaaa(0, 0) + tail_str 
 
 # 傳繪 A 函式內容

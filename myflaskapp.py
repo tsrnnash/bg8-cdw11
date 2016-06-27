@@ -15,6 +15,7 @@ import users.b.g8.bg8_40323229
 import users.b.g8.bg8_40323242
 import users.b.g8.bg8_40323226
 import users.b.g8.bg8_40323239
+import users.b.g8.bg8_40323239_1
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
